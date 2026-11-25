@@ -1,0 +1,239 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 25 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review (24 November 2026), the source retrieval and reading record, the corpus overlap check, refs.bib, REVIEW_SUMMARY.md and the paper's own positioning (Section 1). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Joint limit: Δ_d(n)/(dn)^{3/2} → κ = sqrt((175 − sqrt 7)/756) ≈ 0.47747 whenever d → ∞ and d/n → 0, with |2 sqrt(c_h) − K(h+1/2)^{3/2}| ≤ 0.49",
+   "unit": "statement",
+   "paperLocation": "Theorem 1.1; Sections 5-6",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Crossref and arXiv records, Semantic Scholar citations of Cambie (2020) and general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "maximum Wiener index trees given diameter; Plesník problem; average distance diameter extremal; citations of Cambie 2020 (arXiv:1811.08334); Wiener index survey; double brooms, broom-fans"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv, author or owner-supplied copies)",
+     "query": "Cambie 2020 Theorems 3.4, 4.8, Lemma 4.1; Cambie thesis Samenvatting Fig. 12.17; Plesník 1984 Theorems 2-3 and Section 3; Knor-Škrekovski-Tepeh Problem 28, Question 35; Mukwembi-Vetrík Theorems 3.3-3.4; Wang-Guo; Wagner Theorem 3; Stevanović et al. Section 5; Borovićanin et al.; Pandey-Ravi; Doyle-Snell Section 1.3.5; Lenstra; Wiener 1947"
+    }
+   ],
+   "closestPriorWork": "Cambie 2020 (scale (dn)^{3/2}, bracket sqrt2/3 to 29/60 in iterated limits, geometric binary forks with ratio about 0.38)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no determination of the constant was found; Cambie's scale, bracket, construction idea and peripheral-leaf lemma are credited"
+  },
+  {
+   "claim": "Fixed d ≥ 4: three-term expansion with rational constants c_h, β_h from effective resistance of small rooted trees; Table 2 for h ≤ 8",
+   "unit": "statement",
+   "paperLocation": "Theorem 1.2; Sections 2-3, 7",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Crossref and arXiv records, Semantic Scholar citations of Cambie (2020) and general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "maximum Wiener index trees given diameter; Plesník problem; average distance diameter extremal; citations of Cambie 2020 (arXiv:1811.08334); Wiener index survey; double brooms, broom-fans"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv, author or owner-supplied copies)",
+     "query": "Cambie 2020 Theorems 3.4, 4.8, Lemma 4.1; Cambie thesis Samenvatting Fig. 12.17; Plesník 1984 Theorems 2-3 and Section 3; Knor-Škrekovski-Tepeh Problem 28, Question 35; Mukwembi-Vetrík Theorems 3.3-3.4; Wang-Guo; Wagner Theorem 3; Stevanović et al. Section 5; Borovićanin et al.; Pandey-Ravi; Doyle-Snell Section 1.3.5; Lenstra; Wiener 1947"
+    }
+   ],
+   "closestPriorWork": "Mukwembi-Vetrík 2014 (d ≤ 6: sharp bounds; d = 6 to the n coefficient, d = 5 to n^{3/2}); Wang-Guo and Wagner (d ≤ 4)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "d ≤ 6 expansions are credited and reproduced; d ≥ 7 expansions were not found"
+  },
+  {
+   "claim": "Rigidity for large n with an exact algorithm polynomial in log n (existence); fixed-radius consequence; exact onset computations for d = 6..11, n ≤ 3000",
+   "unit": "statement",
+   "paperLocation": "Theorem 4.1, Corollary 4.2, Section 4",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Crossref and arXiv records, Semantic Scholar citations of Cambie (2020) and general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "maximum Wiener index trees given diameter; Plesník problem; average distance diameter extremal; citations of Cambie 2020 (arXiv:1811.08334); Wiener index survey; double brooms, broom-fans"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv, author or owner-supplied copies)",
+     "query": "Cambie 2020 Theorems 3.4, 4.8, Lemma 4.1; Cambie thesis Samenvatting Fig. 12.17; Plesník 1984 Theorems 2-3 and Section 3; Knor-Škrekovski-Tepeh Problem 28, Question 35; Mukwembi-Vetrík Theorems 3.3-3.4; Wang-Guo; Wagner Theorem 3; Stevanović et al. Section 5; Borovićanin et al.; Pandey-Ravi; Doyle-Snell Section 1.3.5; Lenstra; Wiener 1947"
+    }
+   ],
+   "closestPriorWork": "Stevanović-Milosavljević-Vukičević 2020 Section 5 (fixed-radius computations to 23 vertices); Lenstra 1983 (fixed-dimension integer programming)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no finite-catalogue theorem for this problem was found"
+  },
+  {
+   "claim": "Diameter five: explicit M_5(n) and all maximisers for every n ≥ 6",
+   "unit": "statement",
+   "paperLocation": "Theorem 8.1",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Crossref and arXiv records, Semantic Scholar citations of Cambie (2020) and general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "maximum Wiener index trees given diameter; Plesník problem; average distance diameter extremal; citations of Cambie 2020 (arXiv:1811.08334); Wiener index survey; double brooms, broom-fans"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv, author or owner-supplied copies)",
+     "query": "Cambie 2020 Theorems 3.4, 4.8, Lemma 4.1; Cambie thesis Samenvatting Fig. 12.17; Plesník 1984 Theorems 2-3 and Section 3; Knor-Škrekovski-Tepeh Problem 28, Question 35; Mukwembi-Vetrík Theorems 3.3-3.4; Wang-Guo; Wagner Theorem 3; Stevanović et al. Section 5; Borovićanin et al.; Pandey-Ravi; Doyle-Snell Section 1.3.5; Lenstra; Wiener 1947"
+    }
+   ],
+   "closestPriorWork": "Mukwembi-Vetrík 2014 Theorem 3.3 (bound to n^{3/2} with O(n) error)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "improves the known expansion to an exact formula; the linear term −5n is stated"
+  },
+  {
+   "claim": "Method: exact distance identity reducing the deficit to per-branch costs nA + Σ b_v², read as depth cost plus electrical energy (effective resistance), and a polynomial calibration V = τ²/2 + τx² − x⁴/7 whose splitting excess is a sum of two squares, forcing equal binary splits at heights x²/2 (factor 1/4)",
+   "unit": "method",
+   "paperLocation": "Sections 1.4, 2, 5 (Lemma 5.2, identity (11))",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Crossref and arXiv records, Semantic Scholar citations of Cambie (2020) and general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "maximum Wiener index trees given diameter; Plesník problem; average distance diameter extremal; citations of Cambie 2020 (arXiv:1811.08334); Wiener index survey; double brooms, broom-fans"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv, author or owner-supplied copies)",
+     "query": "Cambie 2020 Theorems 3.4, 4.8, Lemma 4.1; Cambie thesis Samenvatting Fig. 12.17; Plesník 1984 Theorems 2-3 and Section 3; Knor-Škrekovski-Tepeh Problem 28, Question 35; Mukwembi-Vetrík Theorems 3.3-3.4; Wang-Guo; Wagner Theorem 3; Stevanović et al. Section 5; Borovićanin et al.; Pandey-Ravi; Doyle-Snell Section 1.3.5; Lenstra; Wiener 1947"
+    }
+   ],
+   "closestPriorWork": "edge-count formula of Wiener 1947; minimum-energy principle (Doyle-Snell); Cambie's numerically optimised geometric forks",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the ingredients are classical and credited; the calibration for this branching problem was not found"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Cambie, S. (2020), An asymptotic resolution of a problem of Plesník, Journal of Combinatorial Theory, Series B 145, 341-358 (arXiv:1811.08334)",
+   "usedFor": "scale, bracket, constructions, peripheral-leaf lemma (Lemma 4.1), question on graph maximisers",
+   "readWhat": "whole paper (arXiv v2), especially Theorems 3.4 and 4.8 and Lemma 4.1",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.jctb.2020.06.003"
+  },
+  {
+   "citation": "Plesník, J. (1984), On the sum of all distances in a graph or digraph, Journal of Graph Theory 8(1), 1-21",
+   "usedFor": "origin of the question; least sum for given order and diameter",
+   "readWhat": "whole paper (owner-supplied copy), Theorems 2-3, Section 3 opening and Remarks 8-12",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1002/jgt.3190080102"
+  },
+  {
+   "citation": "Knor, M., Škrekovski, R. and Tepeh, A. (2024), Selected topics on Wiener index, Ars Mathematica Contemporanea 24, #P4.07",
+   "usedFor": "Problem 28 (name), Question 35 (Cambie), exact results for d ≤ 4 and d ≥ n − 3",
+   "readWhat": "arXiv:2303.11405 sections on diameter",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.26493/1855-3974.3077.63a"
+  },
+  {
+   "citation": "Mukwembi, S. and Vetrík, T. (2014), Wiener index of trees of given order and diameter at most 6, Bulletin of the Australian Mathematical Society 89(3), 379-396",
+   "usedFor": "d ≤ 6 expansions",
+   "readWhat": "Theorems 3.3-3.4",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1017/S0004972713000816"
+  },
+  {
+   "citation": "Stevanović, D., Milosavljević, N. and Vukičević, D. (2020), A few examples and counterexamples in spectral graph theory, Discussiones Mathematicae Graph Theory 40(2), 637-662",
+   "usedFor": "fixed-radius computations",
+   "readWhat": "Section 5",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.7151/dmgt.2275"
+  },
+  {
+   "citation": "Wagner, S. G. (2006), A class of trees and its Wiener index, Acta Applicandae Mathematicae 91(2), 119-132",
+   "usedFor": "diameter four",
+   "readWhat": "Theorem 3 (author's copy)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1007/s10440-006-9026-5"
+  },
+  {
+   "citation": "Cambie, S. (2022), Extremal aspects of distances and colourings in graphs, doctoral dissertation, Radboud University Nijmegen",
+   "usedFor": "figure counts for the order-235 example",
+   "readWhat": "Samenvatting, Fig. 12.17 (author's edition)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://www.math.ru.nl/personal/stijncambie/PhDthesis_StijnCambie_B5_short_volledig.pdf"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Results concern trees, not general graphs",
+   "closingQuestion": "Are the maximisers among graphs of even diameter trees for large n (Cambie's question)?",
+   "triedOrSearched": "considered in the revision round; Knor-Škrekovski-Tepeh Question 35 read",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 9, first item",
+   "whyNotClosedNow": "a separate open question"
+  },
+  {
+   "limitation": "Lower-order terms in the joint regime and the linear regime d/n → ρ > 0",
+   "closingQuestion": "Does 2 sqrt(c_h) − KΘ^{3/2} converge; what happens for linear diameter?",
+   "triedOrSearched": "window [−0.4822, −0.4221] computed for h ≤ 8; constructions to h = 10^18",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 9",
+   "whyNotClosedNow": "beyond one revision round"
+  },
+  {
+   "limitation": "Thresholds of Theorems 1.2 and 4.1 not computed; algorithm not implemented",
+   "closingQuestion": "Where does rigidity begin in practice?",
+   "triedOrSearched": "exact computations for d = 6..11, n ≤ 3000 (rigidity_onset.py), validated by brute force",
+   "estimatedCost": "hours for the computations; research-level for explicit thresholds",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 9, thresholds and algorithms",
+   "whyNotClosedNow": "the tested range is reported; general thresholds are not evaluated"
+  },
+  {
+   "limitation": "Sections 5-6 verified only by AI-assisted reading",
+   "closingQuestion": "Are the Section 5 constants and inequalities exactly right?",
+   "triedOrSearched": "exact sympy certificate of every Section 5 constant (calibration_certificate.py); independent proof audits of Sections 5-6 and of every rewritten proof",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Check scripts used bare assert in the original bundle",
+   "closingQuestion": "Do the checks stay active under python -O?",
+   "triedOrSearched": "asserts replaced by explicit require(); changing graph_check.py's expected 5530 to 5531 exits 1 under -O; release replay and CI repeat the negative control",
+   "estimatedCost": "minutes",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Novelty rests on searches of limited scope",
+   "closingQuestion": "Would MathSciNet or zbMATH change attribution?",
+   "triedOrSearched": "Crossref, arXiv, Semantic Scholar and web searches; cited sources read; Evidence Press corpus checked",
+   "estimatedCost": "subscription indexes",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "MathSciNet and zbMATH were outside the searched corpus",
+   "whyNotClosedNow": "recorded here; the paper positions its results against the sources read"
+  }
+ ],
+ "extensionScout": {
+  "by": "five internal reviewer roles, the proof auditor and the lead",
+  "date": "2026-11-24",
+  "proposals": [
+   "exact certificate of the Section 5 constants",
+   "computations locating where rigidity begins",
+   "graph constant for even d (Cambie's question)",
+   "linear regime d/n → ρ",
+   "third-order term",
+   "stability of the dyadic pattern"
+  ],
+  "actions": [
+   "done: calibration_certificate.py (exact sympy)",
+   "done: rigidity_onset.py for d = 6..11, n ≤ 3000, validated by brute force",
+   "listed as open in Section 9",
+   "listed as open in Section 9",
+   "listed as open in Section 9",
+   "listed as open in Section 9"
+  ]
+ }
+}

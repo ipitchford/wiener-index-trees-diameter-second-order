@@ -1,0 +1,129 @@
+{
+ "description": "Exact maxima M_d(n) and the onset of the rigid branch catalogue (Theorem 4.1).",
+ "diameters": {
+  "10": {
+   "largest_order_where_some_maximiser_uses_nonoptimal_stem": 288,
+   "largest_order_with_no_optimal_stem_maximiser": 288,
+   "n_range": [
+    14,
+    3000
+   ],
+   "orders_where_some_maximiser_uses_nonoptimal_stem_tail": [
+    187,
+    188,
+    189,
+    190,
+    191,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    241,
+    286,
+    287,
+    288
+   ],
+   "orders_with_no_optimal_stem_maximiser_count": 156
+  },
+  "11": {
+   "largest_order_where_some_maximiser_uses_nonoptimal_stem": 289,
+   "largest_order_with_no_optimal_stem_maximiser": 289,
+   "n_range": [
+    14,
+    3000
+   ],
+   "orders_where_some_maximiser_uses_nonoptimal_stem_tail": [
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289
+   ],
+   "orders_with_no_optimal_stem_maximiser_count": 192
+  },
+  "6": {
+   "largest_order_where_some_maximiser_uses_nonoptimal_stem": null,
+   "largest_order_with_no_optimal_stem_maximiser": null,
+   "n_range": [
+    10,
+    3000
+   ],
+   "orders_where_some_maximiser_uses_nonoptimal_stem_tail": [],
+   "orders_with_no_optimal_stem_maximiser_count": 0
+  },
+  "7": {
+   "largest_order_where_some_maximiser_uses_nonoptimal_stem": null,
+   "largest_order_with_no_optimal_stem_maximiser": null,
+   "n_range": [
+    10,
+    3000
+   ],
+   "orders_where_some_maximiser_uses_nonoptimal_stem_tail": [],
+   "orders_with_no_optimal_stem_maximiser_count": 0
+  },
+  "8": {
+   "largest_order_where_some_maximiser_uses_nonoptimal_stem": 597,
+   "largest_order_with_no_optimal_stem_maximiser": 596,
+   "n_range": [
+    12,
+    3000
+   ],
+   "orders_where_some_maximiser_uses_nonoptimal_stem_tail": [
+    515,
+    516,
+    517,
+    523,
+    524,
+    525,
+    526,
+    527,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597
+   ],
+   "orders_with_no_optimal_stem_maximiser_count": 348
+  },
+  "9": {
+   "largest_order_where_some_maximiser_uses_nonoptimal_stem": 1034,
+   "largest_order_with_no_optimal_stem_maximiser": 1033,
+   "n_range": [
+    12,
+    3000
+   ],
+   "orders_where_some_maximiser_uses_nonoptimal_stem_tail": [
+    831,
+    832,
+    833,
+    834,
+    835,
+    836,
+    837,
+    838,
+    839,
+    840,
+    841,
+    1031,
+    1032,
+    1033,
+    1034
+   ],
+   "orders_with_no_optimal_stem_maximiser_count": 505
+  }
+ }
+}

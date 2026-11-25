@@ -1,0 +1,76 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      rigidity:
+        description: "Also run the slow rigidity scan (about 35 minutes; non-blocking)"
+        type: boolean
+        default: false
+jobs:
+  verify:
+    name: Manifest; nine fast scripts under python -O; comparison with results/; negative control (blocking)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned dependencies
+        run: python3 -m pip install -r requirements.txt
+      - name: Run every fast script in a copy of the package (cwd = package root)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python3 -c 'import sys, numpy, sympy, mpmath; print(sys.version, numpy.__version__, sympy.__version__, mpmath.__version__)'
+          for d in run neg; do mkdir -p "$RUNNER_TEMP/$d/results"; cp -R code "$RUNNER_TEMP/$d/"; done
+          cd "$RUNNER_TEMP/run"
+          P="python3 -I -B -O"; R=results
+          $P code/coefficients.py 8 > $R/coefficients.txt
+          $P code/diameter5.py 54 > $R/diameter-five-54.txt
+          $P code/diameter5.py --check > $R/diameter-five-check.txt
+          $P code/graph_check.py --depth 6 --max-order 15 --order-dp 249 > $R/graph-check.txt
+          $P code/continuum_check.py > $R/mesh-check.txt
+          $P code/calibration_replay.py > $R/calibration-replay.txt
+          $P code/forest_replay.py > $R/forest-replay.txt
+          $P code/calibration_certificate.py > $R/calibration-certificate.txt
+          $P code/claims_check.py > $R/claims-check.txt
+      - name: Compare with the recorded results (declared policy)
+        run: python3 -I -O ci/compare_outputs.py results "$RUNNER_TEMP/run/results"
+      - name: Negative control under -O (graph_check expected value 5530 changed to 5531)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          cd "$RUNNER_TEMP/neg"
+          sed -i 's/require(value == 5530)/require(value == 5531)/' code/graph_check.py
+          grep -q 'require(value == 5531)' code/graph_check.py
+          if python3 -I -B -O code/graph_check.py --depth 6 --max-order 15 --order-dp 249 > neg-output.txt 2>&1; then echo "negative control not detected"; exit 1; fi
+          grep -q 'CHECK FAILED' neg-output.txt
+          echo "negative control detected"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"
+  rigidity:
+    name: Slow rigidity scan d = 6..11, n <= 3000 (manual, non-blocking)
+    if: github.event_name == 'workflow_dispatch' && inputs.rigidity
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m pip install -r requirements.txt
+      - name: Rigidity scan and exact comparison
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          mkdir -p "$RUNNER_TEMP/rig/results"; cp -R code "$RUNNER_TEMP/rig/"; cd "$RUNNER_TEMP/rig"
+          python3 -I -B -O code/rigidity_onset.py --nmax-small 3000 --nmax-large 3000 > results/rigidity-onset.txt
+          cmp results/rigidity-onset.txt "$GITHUB_WORKSPACE/results/rigidity-onset.txt"
+          cmp results/rigidity-onset.json "$GITHUB_WORKSPACE/results/rigidity-onset.json"

@@ -1,0 +1,15 @@
+K = 1.35050156737443218088065188202444326650873568544009211886124
+h=1 tips=1 size=1 trial-minus-scale=-0.481029803
+h=2 tips=1 size=2 trial-minus-scale=-0.439346685
+h=3 tips=2 size=4 trial-minus-scale=-0.476349524
+h=4 tips=2 size=5 trial-minus-scale=-0.482135374
+h=5 tips=2 size=6 trial-minus-scale=-0.449075299
+h=6 tips=2 size=8 trial-minus-scale=-0.471357697
+h=17 tips=4 size=25 trial-minus-scale=-0.480193244
+h=64 tips=8 size=101 trial-minus-scale=-0.465468854
+h=256 tips=16 size=423 trial-minus-scale=-0.462131070
+h=1024 tips=32 size=1727 trial-minus-scale=-0.458023856
+h=4096 tips=64 size=6988 trial-minus-scale=-0.458207938
+h=65536 tips=256 size=112774 trial-minus-scale=-0.457272489
+h=1000000000 tips=32768 size=1725672757 trial-minus-scale=-0.469002876
+h=1000000000000000000 tips=1073741824 size=1725708113919530931 trial-minus-scale=-0.417500730

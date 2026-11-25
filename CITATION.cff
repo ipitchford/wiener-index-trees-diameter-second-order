@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "The maximum Wiener index of trees with prescribed diameter: the sharp second-order constant"
+abstract: "Unrefereed research candidate. Among trees with n vertices and diameter d, the largest Wiener index (sum of all pairwise distances) lies just below (d/2 - eps/4)n^2, eps the parity of d. Cambie (2020) showed that the shortfall has order (dn)^(3/2) and placed its coefficient between sqrt(2)/3 and 29/60 in iterated limits. Whenever d tends to infinity and d/n tends to 0 the shortfall is (kappa + o(1))(dn)^(3/2) with kappa = sqrt((175 - sqrt 7)/756), about 0.47747. For each fixed d >= 4 the coefficients of n^(3/2) and n are rational constants computed from the effective resistance of small rooted trees; for large n every maximiser is built from a finite catalogue of branch shapes, so an exact algorithm polynomial in log n exists; and the maximum and all maximisers are given explicitly for diameter five and every n >= 6."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-25"
+doi: "10.5281/zenodo.24520149"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24520149"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24520148"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/wiener-index-trees-diameter-second-order"
+url: "https://evidencepress.org/releases/wiener-index-trees-diameter-second-order/"
+license: CC0-1.0
+keywords:
+  - Wiener index
+  - trees
+  - diameter
+  - extremal graph theory
+  - effective resistance
+  - chemical graph theory
+preferred-citation:
+  type: article
+  title: "The maximum Wiener index of trees with prescribed diameter: the sharp second-order constant"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24520149"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

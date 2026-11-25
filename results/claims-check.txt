@@ -1,0 +1,45 @@
+PASS K/sqrt8 = kappa
+PASS Theorem 5.1 window at h=1 (remainder -0.48103)
+PASS |remainder| <= 0.49 at h=1
+PASS Theorem 5.1 window at h=2 (remainder -0.43935)
+PASS |remainder| <= 0.49 at h=2
+PASS Theorem 5.1 window at h=3 (remainder -0.47635)
+PASS |remainder| <= 0.49 at h=3
+PASS Theorem 5.1 window at h=4 (remainder -0.48214)
+PASS |remainder| <= 0.49 at h=4
+PASS Theorem 5.1 window at h=5 (remainder -0.44908)
+PASS |remainder| <= 0.49 at h=5
+PASS Theorem 5.1 window at h=6 (remainder -0.47136)
+PASS |remainder| <= 0.49 at h=6
+PASS Theorem 5.1 window at h=7 (remainder -0.46239)
+PASS |remainder| <= 0.49 at h=7
+PASS Theorem 5.1 window at h=8 (remainder -0.42209)
+PASS |remainder| <= 0.49 at h=8
+PASS h=1 remainder -0.48103
+PASS constants 0.48475, 0.30305
+PASS 2 sqrt(c_8)/18^(3/2) = 0.433
+PASS M_9(3000) = 36860816 (also forest_replay.py)
+PASS kappa inside Cambie bracket
+PASS a^2/2 < 0.363, 2/a^2 = 2.756
+PASS first split inside the branch when J >= 1
+PASS C_0 < 0.19
+PASS sqrt2 < sigma_* < 3K/2
+PASS M_8(249) = 215016
+remainder_2sqrtc_minus_KTheta {1: -0.4810298026722076, 2: -0.43934668509682917, 3: -0.4763495241378218, 4: -0.48213537397169154, 5: -0.449075298540879, 6: -0.47135769662793525, 7: -0.4623930709180157, 8: -0.4220928276957354}
+lower_constant 0.48474854566864173
+upper_constant 0.30304576336566325
+ratio_2sqrtc8_over_18^1.5 0.4327156090943675
+relative_gap_to_kappa_at_d18 0.09374072890339298
+2sqrt_c8 33.04542328371661
+K_Theta8 33.467516111412344
+d9_n3000 {'M': 36860816, 'deficit': 1389184.0, 'normalised_deficit': 0.31312239231492045, 'fixed_d_prediction': 1389772.708486752, 'residual_over_sqrt_n': -10.748297266291308}
+sqrt2_over_3 0.4714045207910317
+29_over_60 0.48333333333333334
+kappa 0.47747440814676106
+K 1.3505015673744323
+a2_over_2 0.3628540574112841
+2_over_a2 2.7559289460184546
+C0 0.18170278230297848
+sigma_star 1.5036581645443738
+M8_249 215016
+ALL CHECKS PASSED

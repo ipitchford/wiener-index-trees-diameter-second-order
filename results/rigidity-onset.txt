@@ -1,0 +1,7 @@
+d=6 n in [10,3000]: no all-optimal maximiser at 0 orders (largest None); some maximiser uses a non-optimal stem up to n=None
+d=7 n in [10,3000]: no all-optimal maximiser at 0 orders (largest None); some maximiser uses a non-optimal stem up to n=None
+d=8 n in [12,3000]: no all-optimal maximiser at 348 orders (largest 596); some maximiser uses a non-optimal stem up to n=597
+d=9 n in [12,3000]: no all-optimal maximiser at 505 orders (largest 1033); some maximiser uses a non-optimal stem up to n=1034
+d=10 n in [14,3000]: no all-optimal maximiser at 156 orders (largest 288); some maximiser uses a non-optimal stem up to n=288
+d=11 n in [14,3000]: no all-optimal maximiser at 192 orders (largest 289); some maximiser uses a non-optimal stem up to n=289
+ALL CHECKS PASSED

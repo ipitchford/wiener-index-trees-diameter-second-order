@@ -1,0 +1,103 @@
+{
+ "title": "The maximum Wiener index of trees with prescribed diameter: the sharp second-order constant",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> Add up the distances between every pair of points in a tree-shaped network with n vertices: this is the Wiener index, introduced by Wiener in 1947 to predict boiling points of paraffins and now a standard measure of how spread out a network is. If the diameter d (the longest distance) is prescribed, every distance is at most d, so the total lies below d times the number of pairs. How far below the largest possible total must fall is settled here to second order.</p><p><strong>Context.</strong> Plesník determined the least sum of distances for given order and diameter and remarked that upper bounds seem much more difficult; the maximum has since been called Plesník's problem (Cambie; Knor, &Scaron;krekovski and Tepeh, Problem 28). For trees, the maximum M<sub>d</sub>(n) lies just below (d/2 &minus; &epsilon;/4)n<sup>2</sup>, &epsilon; the parity of d. Exact maximisers were known for d &le; 4 and d &ge; n &minus; 3, with sharp expansions for d &le; 6 by Mukwembi and Vetr&iacute;k. Cambie (2020) showed that the shortfall has order (dn)<sup>3/2</sup> and placed its coefficient between &radic;2/3 &asymp; 0.4714 and 29/60 &asymp; 0.4833, in iterated limits; his lower construction already used branches forking into two at geometrically spaced heights (ratio about 0.38), and his lemma that every leaf of a maximiser lies at full depth is used in the proofs here.</p><p><strong>Main results.</strong> (1) Whenever d &rarr; &infin; and d/n &rarr; 0, with no order of limits imposed, the shortfall is (&kappa; + o(1))(dn)<sup>3/2</sup> with &kappa; = &radic;((175 &minus; &radic;7)/756) &asymp; 0.47747. (2) For each fixed d &ge; 4, M<sub>d</sub>(n) = (r + &epsilon;/4)n<sup>2</sup> &minus; 2&radic;c<sub>h</sub> n<sup>3/2</sup> &minus; (zr + &beta;<sub>h</sub>)n + O<sub>d</sub>(&radic;n), with rational constants computed from the effective resistance of small rooted trees and tabulated for h &le; 8; for example M<sub>8</sub>(n) = 4n<sup>2</sup> &minus; &radic;70 n<sup>3/2</sup> &minus; n + O(&radic;n). (3) For large n every maximiser is built from a finite catalogue of branch shapes, so for each fixed d an exact algorithm running in time polynomial in log n exists. (4) An explicit formula for M<sub>5</sub>(n) and all its maximisers for every n &ge; 6. (5) Exact maxima for 6 &le; d &le; 11 and n &le; 3000 locate where the catalogue takes over in the tested range.</p><p><strong>Method.</strong> An exact distance identity writes the shortfall as a sum over branches of a depth cost and the squared subtree sizes. Treating the leaves as an electric current from the centre, the squared sizes are the energy of the current, so each branch costs its depth cost times an effective resistance. For large diameter this becomes a continuum problem (mass flowing down, splitting for free), solved by the calibration V = &tau;<sup>2</sup>/2 + &tau;x<sup>2</sup> &minus; x<sup>4</sup>/7, whose splitting excess is a sum of two squares: equality only for equal binary splits at heights &tau; = x<sup>2</sup>/2, so the remaining height shrinks by the factor 1/4 at each split.</p><p><strong>Limits.</strong> Trees only: for odd d graphs beat the tree leading term, and for even d the constant answers Plesník's problem for graphs only if Cambie's question (are the graph maximisers trees for large n?) has a positive answer. The constant &kappa; is the leading coefficient; lower-order terms in the joint regime are open, as is the regime d/n &rarr; &rho; &gt; 0. The thresholds of the fixed-diameter and shape theorems are effective but not computed, and the fast algorithm is proved to exist but is not implemented.</p><p><strong>Contents.</strong> The paper (LaTeX source and PDF); nine Python scripts with their recorded outputs: the coefficient table, the diameter-five formula against exhaustive enumeration up to 19 vertices, an independent recursion and the order-249 example (M<sub>8</sub>(249) = 215016), the large-height constructions, an exact symbolic certificate of every Section 5 constant, a claims check and the exact maxima for diameters 6 to 11 up to 3000 vertices; the bibliography, a machine-readable index, a research-gate record, a review summary, a replay receipt and SHA-256 sums. Every check fails explicitly, also under python -O.</p><p><strong>Assurance.</strong> Written proofs with exact computational checks. Internal AI-assisted review only: a combined five-role Claude review panel, an independent proof audit of Sections 5 and 6, an exact symbolic certificate of every Section 5 constant, the lead's brute-force checks, one revision round, then a re-review and a second proof audit of the rewritten proofs. No Astra/Codex review took place. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.1.0-candidate",
+ "publication_date": "2026-11-25",
+ "keywords": [
+  "Wiener index",
+  "trees",
+  "diameter",
+  "extremal graph theory",
+  "Plesník's problem",
+  "effective resistance",
+  "calibration",
+  "chemical graph theory"
+ ],
+ "notes": "Code (*.py and the CI workflow) is MIT; prose, manuscript, recorded outputs and records are CC0-1.0.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/wiener-index-trees-diameter-second-order/tree/v0.1.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/wiener-index-trees-diameter-second-order/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.1016/j.jctb.2020.06.003",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.2989/16073606.2026.2718457",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.26493/1855-3974.3077.63a",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1287/moor.8.4.538",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1017/s0004972713000816",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1002/jgt.3190080102",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.7151/dmgt.2275",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/s10440-006-9026-5",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1021/ja01193a005",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:1811.08334",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2303.11405",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2507.17885",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2605.24855",
+   "relation": "references",
+   "scheme": "arxiv"
+  }
+ ]
+}

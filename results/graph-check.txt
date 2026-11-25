@@ -1,0 +1,27 @@
+h=1, c=1, minimum beta=1
+  A=1, R=1, size=1, beta=1, H=.
+h=2, c=6, minimum beta=-1
+  A=3, R=2, size=2, beta=-1, H=(.)
+  A=4, R=3/2, size=3, beta=0, H=(.,.)
+h=3, c=35/2, minimum beta=-3
+  A=7, R=5/2, size=4, beta=-3, H=((.,.))
+h=4, c=77/2, minimum beta=-8
+  A=11, R=7/2, size=5, beta=-8, H=(((.,.)))
+h=5, c=72, minimum beta=-15
+  A=16, R=9/2, size=6, beta=-15, H=((((.,.))))
+  A=18, R=4, size=7, beta=-13, H=((((.),(.))))
+h=6, c=120, minimum beta=-21
+  A=24, R=5, size=8, beta=-21, H=(((((.),(.)))))
+n=54, d=5: W=5530, (left,right,children): [(24, 28, 3, 4)]
+Full-tree height DP and reconstructed distances (n=249): {4: 115440, 5: 130474, 6: 166342, 7: 181136, 8: 215016, 9: 229646}
+n= 6 diameter 5: W=35, equality shapes=1
+n= 7 diameter 5: W=52, equality shapes=1
+n= 8 diameter 5: W=74, equality shapes=1
+n= 9 diameter 5: W=98, equality shapes=2
+n=10 diameter 5: W=127, equality shapes=2
+n=11 diameter 5: W=160, equality shapes=2
+n=12 diameter 5: W=198, equality shapes=1
+n=13 diameter 5: W=238, equality shapes=3
+n=14 diameter 5: W=285, equality shapes=1
+n=15 diameter 5: W=334, equality shapes=1
+All small-tree checks passed.
